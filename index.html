@@ -3,35 +3,35 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Generator</title>
+    <title>Sozhski Ping-Pong: простой генератор</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src='main.js'></script>
 </head>
 <body>
-    <div>
-
+    <div id="main">
+        <div>
+            <p>Игроки:</p>
+            <textarea rows="20" cols="60" id="participants"></textarea>
+        </div>
+        <div> 
+            Раунд:
+            <select id="round">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <button id="generate">Генерировать</button>
+            <button id="clean">Очистить</button>
+        </div>
+        <div>
+            <p>Игры:</p>
+            <textarea rows="20" cols="60" id="output"></textarea>    
+        </div>
     </div>
 
-    <div>
-        <p>Игроки:</p>
-        <textarea rows="20" cols="60" id="participants"></textarea>
-    </div>
-    <div> 
-        Раунд:
-        <select id="round">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-        </select>
-        <button id="generate">Генерировать</button>
-        <button id="clean">Очистить</button>
-    </div>
-    <div>
-        <p>Игры:</p>
-        <textarea rows="20" cols="60" id="output"></textarea>    
-    </div>
-    
 </body>
 </html>
